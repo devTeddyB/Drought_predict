@@ -1,4 +1,4 @@
-# PROJECT3-dought-predict
+# PROJECT3-Drought_predict
 
 ## 가뭄을 예측하는 API서비스 개발
 
