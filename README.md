@@ -30,4 +30,4 @@
 ---
 
 ### 사용한 프로그래밍 언어 및 라이브러리
-https://img.shields.io/badge/-Python-yellow
+<img src="https://img.shields.io/badge/{Python}-{yellow}?style={plastic}/>
