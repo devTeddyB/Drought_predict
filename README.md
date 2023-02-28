@@ -3,15 +3,15 @@
 ## 가뭄을 예측하는 API서비스 개발
 
 ### 설명
- - OpenAPI에서 제공되는 '종관기상관측자료'와 '기상자료개방포털'에서 제공되는 표준가뭄지수 데이터를 학습에 사용하여 알고자 하는 지역의 월별 예상 누적강수량과 예상 평균기온을 입력하면 예상 가뭄지수를 보여주는 딥러닝 모델을 개발하고자 함.
+ - '기상자료개방포털'에서 제공되는 '종관기상관측자료'와 '표준강수지수' 데이터를 학습에 사용하여 알고자 하는 지역의 월별 예상 누적강수량과 예상 평균기온을 입력하면 예상 가뭄지수를 보여주는 딥러닝 모델을 개발하고자 함.
  - 위 개발을 통해 국내 농가에게 가뭄에 대비하고 피해를 줄일 수 있도록 하기 위함.
- - 종관기상관측자료 수가 약 60만개가 존재하고 일자료이기때문에 누적강수량 정보가 없어, 최종적으로는 기상자료개방포털에서 제공되는 월별자료 최근 3년치를 다운받아 표준가뭄지수 데이터와 합쳐서 사용하였음.
+ - 종관기상관측자료 수가 약 60만개가 존재하고 일자료이기때문에 누적강수량 정보가 없어, 최종적으로는 기상자료개방포털에서 제공되는 월별자료 최근 3년치를 다운받아 표준강수지수 데이터와 합쳐서 사용하였음.
  - 프로젝트가 끝난 뒤 찾아보니 수문기상가뭄정보시스템 포털에 개월수별 누적강수량과 그에따른 SPI지수 데이터가 있었음.(나중에 다시 하게 된다면 이 포털에서 스크래핑을 할 수 있을 듯.)
  
 ---
 ### 과정
  + **데이터수집**
-   + OpenAPI의 '종관기상관측자료' 및 '기상자료개방포털'에서 제공되는 '표준가뭄지수' 데이터 활용
+   + '기상자료개방포털'에서 제공되는 '종관기상관측자료'와 '표준강수지수' 데이터 활용
    + 스크래핑을 이용하여 데이터 수집
    + sql을 활용하여 DB에 적재한 뒤 불러와서 사용하였음.
 
@@ -31,3 +31,13 @@
 
 ### 사용한 프로그래밍 언어 및 라이브러리
 <img src="https://img.shields.io/badge/Python-yellow?style=flat"/> <img src="https://img.shields.io/badge/pandas-red?style=flat"/> <img src="https://img.shields.io/badge/sqlite3-blue?style=flat"/> <img src="https://img.shields.io/badge/sklearn-lightgrey?style=flat"/> <img src="https://img.shields.io/badge/pickle-green?style=flat"/> <img src="https://img.shields.io/badge/flask-orange?style=flat"/> 
+
+---
+
+### 데이터 정보 및 참고 사이트
+ - **데이터**
+   - 종관기상관측(ASOS) : https://data.kma.go.kr/data/grnd/selectAsosRltmList.do?pgmNo=36
+   - 표준강수지수(SPI) : https://data.kma.go.kr/data/gaw/selectSpiRltmList.do?pgmNo=734
+ - **참고 사이트**
+   - 국가가뭄정보포털 : https://www.drought.go.kr/menu/m30/m31.do
+   - 수문기상 가뭄정보 시스템 : https://hydro.kma.go.kr/index.do
