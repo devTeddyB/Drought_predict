@@ -30,4 +30,4 @@
 ---
 
 ### 사용한 프로그래밍 언어 및 라이브러리
-<img src="https://img.shields.io/badge/Python-yellow?style=plastic"/> <img src="https://img.shields.io/badge/pandas-red?style=plastic"/> <img src="https://img.shields.io/badge/sqlite3-blue?style=plastic"/> <img src="https://img.shields.io/badge/sklearn-lightgrey?style=plastic"/>
+<img src="https://img.shields.io/badge/Python-yellow?style=flat"/> <img src="https://img.shields.io/badge/pandas-red?style=flat"/> <img src="https://img.shields.io/badge/sqlite3-blue?style=flat"/> <img src="https://img.shields.io/badge/sklearn-lightgrey?style=flat"/> <img src="https://img.shields.io/badge/pickle-lightgreen?style=flat"/> <img src="https://img.shields.io/badge/flask-orange?style=flat"/> 
