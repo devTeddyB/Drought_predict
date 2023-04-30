@@ -39,7 +39,6 @@
  + 클론한 폴더경로에 접속하고 CLI에 flask 실행 명령어를 입력한다.
    + FLASK_APP=flask_app/main.py flask run
  + CLI에 표시되는 웹 주소에 접속한다.
- + 시연 GIF
    ![시연영상](https://user-images.githubusercontent.com/106226188/235339539-dbde660c-3785-48b6-8d93-be6457339b92.gif)
 
 ---
